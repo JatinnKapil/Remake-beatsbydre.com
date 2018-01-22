@@ -54,7 +54,7 @@ header li {
   margin-left: 90px;
 }
 
-header a {
+header a,header a:visited {
   color: white;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
