@@ -3,6 +3,7 @@ white : #ffffff;
 black : #161616;  */
 
 
+/* General styles */
 
 
 h1,h2,h3 {
@@ -30,28 +31,104 @@ button {
   font-size: 12px;
 }
 
-.header{
-  height: 80px;
-  background:  #161616;
+/* Header styles  */
 
+header {
+  height:80px;
+  background: #161616;
+  padding-top: 20px;
+}
+
+header ul {
+  background: black;
+  float: right;
+  margin-top: 25px;
+  padding: 0;
+  width: calc(100%-60px);
+  text-align: right;
+
+}
+header li {
+  display: inline-block;
+
+  margin-left: 90px;
+}
+
+header a {
+  color: white;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+header a:hover,header a:focus,header a:active {
+  opacity: 0.9;
+  text-decoration: none;
+  color: white;
+
+
+}
+
+header .logo{
+  background-position: left;
+  background-image: url('../img/logo.svg');
+  height: 40px;
+  width: 40px;
+  background-size: 40px;
+  float:left;
+}
+.desktop-nav .logo {
+  float: left;
+}
+.mobile-nav {
+  display: none;
+}
+.mobile-nav .logo {
+  display: inline-block;
+  text-align: center;
+}
+.mobile-nav .hamburger-container,.mobile-nav .search-container  {
+  width: 40px;
+  display: inline-block;
+  background: red;
+  margin-left: -4px;
+}
+.mobile-nav .logo-container {
+  display: inline-block;
+  margin-left: -4px;
+  width: calc(100%-80px);
+}
+.mobile-nav button {
+  background: transparent;
+  border: none;
+  color: white;
+}
+
+
+
+
+@media (max-width : 768px) {
+  .mobile-nav {
+    display: block;
+  }
+  .desktop-nav {
+    display: none;
+  }
 }
 
 .hero {
   height: 400px;
   background: #999;
-
 }
+
 .product-lineup-container{
   height: 400px;
   background: #333;
-
 }
 
-.featured-product-container{
+.featured-product-container {
   height: 400px;
   background: #444;
-
 }
+
 .product-support-container{
   height: 400px;
   background: #555;
