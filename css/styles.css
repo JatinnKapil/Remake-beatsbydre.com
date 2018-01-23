@@ -1,140 +1,199 @@
-/*red : #e01e3c;
-white : #ffffff;
-black : #161616;  */
+/*
+red: #e01e3c;
+black: #161616;
+white: #ffffff;
+font-family: 'Oswald', sans-serif;
+font-family: 'Nunito Sans', sans-serif;
+*/
 
+/* * * * * * * * * * * * * * * * * * * * *
+General Styles
+* * * * * * * * * * * * * * * * * * * * */
 
-/* General styles */
-
-
-h1,h2,h3 {
-  font-family: 'Nunito Sans', sans-serif;
-  font-family: 'Oswald', sans-serif;
+h1, h2, h3 {
+    font-family: 'Nunito Sans', sans-serif;
 }
+
 h1 {
-  font-size: 70px;
-  font-weight: 700;
+    font-size: 70px;
+    font-weight: 700;
 }
+
 h2 {
-  font-size: 50px;
-  font-weight: 700;
+    font-size: 50px;
+    font-weight: 700;
 }
+
 h3 {
-  font-size: 36px;
-  font-weight: 700;
+    font-size: 36px;
+    font-weight: 700;
 }
 
 p {
-  font-family: sans-serif;
+    font-family: sans-serif;
 }
+
 button {
-  font-family: 'Oswald', sans-serif;
-  font-size: 12px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
 }
 
-/* Header styles  */
 
+
+
+/* * * * * * * * * * * * * * * * * * * * *
+Header Styles
+* * * * * * * * * * * * * * * * * * * * */
+
+
+/* General */
 header {
-  height:80px;
-  background: #161616;
-  padding-top: 20px;
+    height: 80px;
+    background: #161616;
+    padding-top: 20px;
 }
 
-header ul {
-  background: black;
-  float: right;
-  margin-top: 25px;
-  padding: 0;
-  width: calc(100%-60px);
-  text-align: right;
-
-}
-header li {
-  display: inline-block;
-
-  margin-left: 90px;
+header .logo {
+    background-image: url('../img/logo.svg');
+    height: 40px;
+    width: 40px;
+    background-size: 40px;
 }
 
-header a,header a:visited {
-  color: white;
+
+
+/* Desktop */
+.desktop-nav ul {
+    float: right;
+    margin-top: 10px;
+    padding: 0;
+    width: calc(100% - 60px);
+    text-align: right;
+}
+
+.desktop-nav li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.desktop-nav a,
+.desktop-nav a:visited {
+    color: white;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
 }
-header a:hover,header a:focus,header a:active {
-  opacity: 0.9;
-  text-decoration: none;
-  color: white;
 
-
+.desktop-nav a:hover,
+.desktop-nav a:focus,
+.desktop-nav a:active {
+    opacity: 0.9;
+    color: white;
+    text-decoration: none;
 }
 
-header .logo{
-  background-position: left;
-  background-image: url('../img/logo.svg');
-  height: 40px;
-  width: 40px;
-  background-size: 40px;
-  float:left;
-}
 .desktop-nav .logo {
-  float: left;
+    float: left;
 }
+
+
+
+/* Mobile */
 .mobile-nav {
-  display: none;
-}
-.mobile-nav .logo {
-  display: inline-block;
-  text-align: center;
-}
-.mobile-nav .hamburger-container,.mobile-nav .search-container  {
-  width: 40px;
-  display: inline-block;
-  background: red;
-  margin-left: -4px;
-}
-.mobile-nav .logo-container {
-  display: inline-block;
-  margin-left: -4px;
-  width: calc(100%-80px);
-}
-.mobile-nav button {
-  background: transparent;
-  border: none;
-  color: white;
-}
-
-
-
-
-@media (max-width : 768px) {
-  .mobile-nav {
-    display: block;
-  }
-  .desktop-nav {
     display: none;
-  }
+    text-align: center;
 }
 
+.mobile-nav .logo {
+    display: inline-block;
+}
+
+.mobile-nav .hamburger-container,
+.mobile-nav .search-container {
+    vertical-align: top;
+    margin-top: 8px;
+    width: 40px;
+    display: inline-block;
+    margin-left: -4px;
+}
+
+.mobile-nav .logo-container {
+    display: inline-block;
+    margin-left: -4px;
+    width: calc(100% - 80px);
+}
+
+.mobile-nav button {
+    background: transparent;
+    border: none;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .mobile-nav {
+        display: block;
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+}
+
+
+
+/* * * * * * * * * * * * * * * * * * * * *
+Hero Styles
+* * * * * * * * * * * * * * * * * * * * */
 .hero {
-  height: 400px;
-  background: #999;
+    height: 400px;
+    background: #999;
 }
 
-.product-lineup-container{
-  height: 400px;
-  background: #333;
+
+
+/* * * * * * * * * * * * * * * * * * * * *
+Product Lineup
+* * * * * * * * * * * * * * * * * * * * */
+.product-lineup-container {
+    height: 400px;
+    background: #333;
 }
 
+
+
+/* * * * * * * * * * * * * * * * * * * * *
+Featured Product
+* * * * * * * * * * * * * * * * * * * * */
 .featured-product-container {
-  height: 400px;
-  background: #444;
+    height: 400px;
+    background: #444;
 }
 
-.product-support-container{
-  height: 400px;
-  background: #555;
 
+
+/* * * * * * * * * * * * * * * * * * * * *
+Product Support
+* * * * * * * * * * * * * * * * * * * * */
+.product-support-container {
+    height: 400px;
+    background: #555;
 }
-.subscription-container{
-  height: 400px;
-  background:#666
+
+
+
+/* * * * * * * * * * * * * * * * * * * * *
+Subscription
+* * * * * * * * * * * * * * * * * * * * */
+.subscription-container {
+    height: 400px;
+    background: #666;
+}
+
+
+
+/* * * * * * * * * * * * * * * * * * * * *
+Footer
+* * * * * * * * * * * * * * * * * * * * */
+footer {
+    height: 400px;
+    background: #161616;
 }
