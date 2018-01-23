@@ -144,8 +144,10 @@ header .logo {
 Hero Styles
 * * * * * * * * * * * * * * * * * * * * */
 .hero {
-    height: 400px;
+    height: 800px;
     background: #999;
+    background-image: url(../img/hero-large.jpg);
+    background-size: cover;
 }
 
 
