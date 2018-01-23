@@ -16,7 +16,8 @@ h1, h2, h3 {
 
 h1 {
     font-size: 70px;
-    font-weight: 700;
+    font-weight: 900;
+    color: white;
 }
 
 h2 {
@@ -31,15 +32,32 @@ h3 {
 
 p {
     font-family: sans-serif;
+    color: white;
 }
 
-button {
+.button {
     font-family: 'Oswald', sans-serif;
     font-size: 12px;
+
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 22px;
+    margin: 10px;
 }
-
-
-
+.red-button {
+  border: 1px solid #999;
+  background: #e01e3c;
+  color: white;
+}
+.light-button {
+  border: 1px solid #999;
+  background: transparent;
+  color: white;
+}
+.dark-button {
+  background: #e01e3c;
+  color: white;
+}
 
 /* * * * * * * * * * * * * * * * * * * * *
 Header Styles
@@ -144,14 +162,27 @@ header .logo {
 Hero Styles
 * * * * * * * * * * * * * * * * * * * * */
 .hero {
-    height: 800px;
+    height:calc(100vh - 80px);
     background: #999;
     background-image: url(../img/hero-large.jpg);
     background-size: cover;
+    text-align: center;
+  }
+.hero-text-container {
+  padding-top: 600px;
 }
+.hero-text-container h1 {
+  margin-bottom: 20px;
+}
+.hero-text-container p {
+  margin-bottom: 30px;
+}
+@media (max-width: 700px) {
+  .hero {
+    background-image: url(../img/hero-small.jpg);
+  }
 
-
-
+}
 /* * * * * * * * * * * * * * * * * * * * *
 Product Lineup
 * * * * * * * * * * * * * * * * * * * * */
